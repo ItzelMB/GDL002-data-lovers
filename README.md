@@ -51,8 +51,6 @@ Para la realización del proyecto se realizaron diversos prototipos diseñados p
 **Investigación con usuarios / entrevistas**
 Para las entrevistas y test de los prototipos de baja fidelidad se buscaron usuarios que aportaran su experiencia en cuanto a la realización y diseño de los mismos para obtener una guía antes de mostrarlos al usuario principal, por ello se seleccionaron usuarios de distintas edades y conocimientos del tema. 
 
-[PROTOTIPO](protitipos/baja-fidelidad/prot12.jpg)
-
 > **Nota:** Los prototipos de baja fidelidad pueden ser observados dentro de la carpeta de "baja-fidelidad" ubicada en la carpeta de PROTOTIPOS dentro del boilerplate.
 > 
 

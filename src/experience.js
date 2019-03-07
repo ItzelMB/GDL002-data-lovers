@@ -1,0 +1,1 @@
+const goToPokedex = document.querySelector('#intro');

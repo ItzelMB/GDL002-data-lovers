@@ -1,3 +1,4 @@
+ /* -------- Estilos universales -------------------*/
 * {
     margin: 0;
     text-align: center;
@@ -5,16 +6,69 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    box-sizing: content-box;
 }
+
+ /* -------- Estilos generales -------------------*/
+
+ h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #323131;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: 'Slackey', cursive;
+    color: #1A3BEA;
+    margin-bottom: 1.625rem;
+}
+
+h3 {
+    color: #323131;
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px #eeeeee;
+    margin-top: 1.8rem;
+    margin-bottom: 1.5rem;
+    line-height: 2rem;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    color: #323131;
+}
+
+button {
+    background-image: linear-gradient(#0c17f5, #73c1f5);
+    width: 12.5rem;
+    height: 3.125rem;
+    border-radius: 0.625rem;
+    border: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 1.625rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(255, 123, 0), #fce300);
+}
+
+ /* -------- Estilos menú desktop -------------------*/
 .wrapper {
     width: 85%;
     margin: auto;
     overflow:hidden;
 }
+
 #logoNav {
     float: left;
     padding: 22px 0 0 20px;
 }
+
 header {
     width: 100%;
     position: fixed;
@@ -22,13 +76,16 @@ header {
     background-image: linear-gradient(#0c17f5, #73c1f5);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
 nav {
     float: right;
 }
+
 nav ul {
     list-style: none;
     overflow: hidden;
 }
+
 nav ul li {
     font-family:  'Oswald', sans-serif;
     font-size: 1.2rem;
@@ -38,21 +95,27 @@ nav ul li {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
+
 nav ul li a {
     display: block;
     text-decoration: none;
 }
+
 a {
     color: #ffffff;
     text-decoration: none;
 }
+
 a:hover {
     color: #73c1f5;
 }
+
 .highlight {
     color: #0c17f5;
     font-style: bold;
 }
+
+/* -------- Estilos pantalla main interaction: Secc pokédex-------------------*/
 #main-interaction {
     padding-top: 6.25rem;
     background-image:
@@ -64,17 +127,20 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #container {
     padding: 1.25rem;
     justify-content: center;
     margin: auto;
     box-sizing: content-box;
 }
+
 .selects {
     box-sizing: content-box;
     width: 100%;
     float: right;
 }
+
 #filterSelect, #orderSelect {
     color: #ffffff;
     font-family: 'Oswald', sans-serif;
@@ -87,12 +153,14 @@ a:hover {
     padding-left: 1.25rem;
     margin: 15px 15px 20px 15px;
 }
+
 #cards {
     padding-top: 3.125rem;
     padding-left: 3.75rem;
     padding-right: 3.75rem;
     margin: auto;
 }
+
 .card {
     display: inline-block;
     color: #323131;
@@ -105,6 +173,8 @@ a:hover {
     margin: 0.8rem;
     max-width: 13.5rem;
 }
+
+/* -------- Estilos pantalla main interaction: Secc estadísticas -------------------*/
 #statistics {
     background-image:
     url("img/cinti-2.png");
@@ -117,6 +187,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 #statContainerText {
     padding-top: 4rem ;
     padding-left: 5rem;
@@ -134,6 +205,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .inputStyle {
     width: 15.63rem;
     height: 2.5rem;
@@ -142,42 +214,34 @@ a:hover {
     margin: 25px 8px 25px 8px;
     background-color: #eeeeee; 
 }
+
 .styleA {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     line-height: 2rem;
     color: #323131;
  }
+
  .resultsTitle {
     font-size: 1.4rem;
     line-height: 2.4rem;
     color: #323131;
  }
+
  .resultStatistics {
      font-size: 1.1rem;
      line-height: 2rem;
      color: #1A3BEA;
  }
-button {
-    background-image: linear-gradient(#0c17f5, #73c1f5);
-    width: 12.5rem;
-    height: 3.125rem;
-    border-radius: 0.625rem;
-    border: 0;
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 1.625rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-button:hover {
-    background-image: linear-gradient(rgb(255, 123, 0), #fce300);
-}
+
+ /* -------- Estilos pantalla main interaction: Secc instalar app POKEMON GO -------------------*/
+
 #installApp {
     background-image:
     url("img/bg-install.png");
     height: 31.25rem;
 }
+
 .containerText {
     margin: auto;
     float: left;
@@ -189,10 +253,12 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .linkStyleButtonContainer {
     width: 100%;
     text-align: center;
 }
+
 .linkStyleButton {
     font-family: 'Oswald', sans-serif;
     font-size: 1.2rem;
@@ -205,43 +271,75 @@ button:hover {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: inline-block;    
 }
+
 .linkStyleButton:hover {
     background-image: linear-gradient(rgb(255, 123, 0), #fce300);
 }
+
+ /* -------- Estilo footer -------------------*/
 footer {
     padding-top: 1.6rem;
     background-color: #151515;
     height: 2.8rem;
  }
+
 .pFooter {
     font-display: 'Slackey', cursive;
     font-size: 1.2rem;
     color: #ffffff;
     text-align: center;
 }
-h1 {
-    font-family: 'Oswald', sans-serif;
-    color: #323131;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-h2 {
-    font-family: 'Slackey', cursive;
-    color: #1A3BEA;
-    margin-bottom: 1.625rem;
-}
-h3 {
-    color: #323131;
-    font-family: 'Montserrat', sans-serif;
-    font-style: medium;
-    font-size: 1.2rem;
-    text-shadow: 1px 1px 2px #eeeeee;
-    margin-top: 1.8rem;
-    margin-bottom: 1.5rem;
-    line-height: 2rem;
-}
- p {
-    font-family: 'Oswald', sans-serif;
-    color: #323131;
- }
 
+ /* -------- Pantalla intro--------------------*/
+.introScreen {
+    background-image: 
+    url("img/bg-intro.png");
+    box-sizing: content-box;
+    width: 100%;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: block;
+}
+
+ /* -------- Pantalla discover--------------------*/
+ .discoverScreen, .quizzCard {
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+ }
+ .discoverScreen {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image:
+    url("img/bg-intro.png") 
+      
+ }
+.quizzCard{
+    background-color: #ffffff;
+    border-radius: 0.9375rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    line-height: 1.4rem;
+    margin: auto;
+    width: 70%;
+}
+
+/* -------- Pantalla resultados--------------------*/
+.resultsScreen {
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image:
+    url("img/bg-result.png") 
+}
