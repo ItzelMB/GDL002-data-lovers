@@ -3,44 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Descubrir Pokémon</title>
+    <title>Pokédiscover</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald|Roboto|Slackey" rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <section id="intro" class="introScreen">
-            <article>
-                <img src="img/pokediscover.png" width="300">
-                <h4>Aquí podrás encontrar el camino para ser un gran maestro Pokémon y adentrarte al juego de Pokémon GO</h4>
-                <p>Si quieres iniciarte en Pokémon descubre a tu primer Pokémon</p>
-                <button id="discoverPoke">!Descubrir Pokémon!</button>
-                <p>Si ya eres un entrenador Pokémon ingresa a la Pokédex</p>
-                <button id="goToPokedex"><a href="index.html">¡Ir a Pokédex!</a></button>
-            </article>
-        </section>
+    
+    <section id="intro" class="introScreen">
+        <article class="mainLogo">
+            <img src="img/pokediscover.png" width="340">
+            <h4>Aquí podrás encontrar el camino para ser un gran maestro Pokémon y <br/>adentrarte al juego de Pokémon GO</h4>
+            <p class="introStyle">Si quieres iniciarte en Pokémon descubre a tu primer Pokémon</p>
+            <button id="discoverPoke">!Descubrir Pokémon!</button>
+            <p class="introStyle">Si ya eres un entrenador Pokémon ingresa a la Pokédex</p>
+           
+                    <a href="index.html" class="linkStyleButton">¡Ir a Pokédex!</a>
+           
+        </article>
+    </section>
 
-        <section id="discover" class="discoverScreen">
-            <h2>Estás por descubrir a tu primer pokémon, responde el quiz para saber qué tipo de elemento eres y cuál será tu pokémon.</h2>
-            <article class="quizzCard">
-                <h3>¿Qué estación del año te gusta más?</h3>
-                <button>verano</button>
-                <button>otoño</button>
-                <button>primavera</button>
-                <button>invierno</button>
-            </article>
-        </section>
+    <main id="discover" class="discoverScreen">
+        <section class="containerDiscoverSecc">
+                <h2>Estás por descubrir a tu primer pokémon, responde el quiz para saber qué tipo de elemento eres y cuál será tu pokémon.</h2>   
+       
+                <form>
+                    <section id="stationQuestion">
+                        <h3>¿Qué estación del año te gusta más?</h3>
+                        <button id="summer" value="Grass">verano</button>
+                        <button id="autumn" value="Fire">otoño</button>
+                        <button id="spring" value="Flying">primavera</button>
+                        <button id="winter" value="Water">invierno</button>
+                    </section>
 
-        <section id="results" class="resultsScreen">
-            <h2>¡Felicidades! <br/> Eres un maestro pokémon de tipo</h2>
-        </section>
+                    <section id="definitionQuestion">
+                            <h3>En tu grupo de amigos ¿Qué característica es la que más te define?:</h3>
+                            <button id="summer" value="Bulbasaur">tranquilidad</button>
+                            <button id="autumn" value="Farfetch'd">alma libre</button>
+                            <button id="spring" value="Charmander">alegría</button>
+                            <button id="winter" value="Caterpie">humildad</button>
+                            <button id="summer" value="Squirtle">diversión</button>
+                            <button id="autumn" value="Vulpix">amistad</button>
+                            <button id="spring" value="Pidgey">fuerza</button>
+                            <button id="winter" value="Poliwag">adaptabilidad</button>
+                    </section>
 
-        <footer>
-            <p class="pFooter">Developed by DixelTeam, 2019</p>
-        </footer>
+                    <section id="natureQuestion">
+                            <h3>Si pudieras controlar un fenómeno de la naturaleza ¿Cuál sería?</h3>
+                            <button id="summer" value="Grass">erupción volcánica</button>
+                            <button id="autumn" value="Fire">huracán</button>
+                            <button id="spring" value="Flying">fenómeno inexplicable</button>
+                            <button id="winter" value="Water">remolino</button>
+                            <button id="summer" value="Grass">terremoto</button>
+                            <button id="autumn" value="Fire">ola gigante</button>
+                            <button id="spring" value="Flying">rayos de sol</button>
+                            <button id="winter" value="Water">tornado</button>              
+                    </section>
+                </form>
+                <article>
+                    <button id="discoverResults">!Descubrir ahora!</button>
+                </article>
+        </section>    
     </main>
-    <script src="main.js"></script>  
+
+    <section id="resultsPoke" class="resultsScreen">
+        <h2>¡Felicidades! <br/> Eres un maestro pokémon de tipo</h2>
+        <a href="index.html" class="linkStyleButton">¡Conocer más pokémon!</a>
+    </section>
+
+    <footer>
+        <p class="parrFooter">Developed by DixelTeam, 2019</p>
+    </footer>
+    
+    <script src="experience.js"></script>
+    <script src="data.js"></script>  
 </body>
 </html>

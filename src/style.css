@@ -35,6 +35,17 @@ h3 {
     line-height: 2rem;
 }
 
+h4 {
+    color: #323131;
+    font-family: 'Montserrat', sans-serif;
+    font-style: medium;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px #eeeeee;
+    padding-top: .6rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+}
+
 p {
     font-family: 'Oswald', sans-serif;
     color: #323131;
@@ -257,6 +268,7 @@ a:hover {
 .linkStyleButtonContainer {
     width: 100%;
     text-align: center;
+    
 }
 
 .linkStyleButton {
@@ -269,7 +281,8 @@ a:hover {
     border: 0;
     margin-bottom: 1.625rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: inline-block;    
+    display: inline-block;
+    padding-top: 1rem; 
 }
 
 .linkStyleButton:hover {
@@ -283,7 +296,7 @@ footer {
     height: 2.8rem;
  }
 
-.pFooter {
+.parrFooter {
     font-display: 'Slackey', cursive;
     font-size: 1.2rem;
     color: #ffffff;
@@ -293,7 +306,7 @@ footer {
  /* -------- Pantalla intro--------------------*/
 .introScreen {
     background-image: 
-    url("img/bg-intro.png");
+    url("img/bg-5.png");
     box-sizing: content-box;
     width: 100%;
     background-attachment: scroll;
@@ -305,31 +318,62 @@ footer {
     display: block;
 }
 
+.mainLogo {
+    padding-top: 3.5rem;
+}
+
+.introStyle {
+    font-size: 1.3rem;
+    text-shadow: 1px 1px 2px #eeeeee;
+    margin-bottom: 1.5rem;
+}
  /* -------- Pantalla discover--------------------*/
- .discoverScreen, .quizzCard {
+ .discoverScreen {
+    display: block;
+    width: 100%;
+    background-image:
+    url("img/bg-quizz.jpg");
     background-attachment: scroll;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: content-box;
- }
- .discoverScreen {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    background-image:
-    url("img/bg-intro.png") 
-      
- }
-.quizzCard{
+    padding-bottom: 2rem;
+    display: none;  
+}
+
+.containerDiscoverSecc {
+    padding-top: 4rem;
+    width: 80%;
+    margin: auto;     
+}
+
+form {
     background-color: #ffffff;
     border-radius: 0.9375rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     line-height: 1.4rem;
     margin: auto;
     width: 70%;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-bottom: 2.5rem;
+}
+/*
+.stationQuestion {
+    display: block;
 }
 
+.definitionQuestion {
+    display: none;
+}
+
+.natureQuestion {
+    display: none;
+}
+*/
 /* -------- Pantalla resultados--------------------*/
 .resultsScreen {
     background-attachment: scroll;
@@ -337,9 +381,10 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: content-box;
-    display: block;
     width: 100%;
     height: 100vh;
     background-image:
-    url("img/bg-result.png") 
+    url("img/bg-result.png");
+    padding-top: 4rem;
+    display: none;
 }
