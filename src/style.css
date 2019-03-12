@@ -245,6 +245,10 @@ a:hover {
      color: #1A3BEA;
  }
 
+ .chartDiv {
+     margin: auto;
+ }
+
  /* -------- Estilos pantalla main interaction: Secc instalar app POKEMON GO -------------------*/
 
 #installApp {
